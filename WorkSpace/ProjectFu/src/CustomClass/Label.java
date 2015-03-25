@@ -3,6 +3,7 @@ package CustomClass;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Random;
 
 import weka.core.Instance;
 
@@ -50,6 +51,47 @@ public class Label {
 				MaxCount = labelMap.get(entry);
 			}
 		}
+		
+		// set the Label.
+		m_currentLabel = max;
+		return m_currentLabel;
+	}
+	
+
+	public Object calculateMajorityLabel(int numberOfLabels, int Random) {
+		Random r = new Random();
+		Hashtable<Integer, Integer> labelMap = new Hashtable<Integer, Integer> ();
+		ArrayList<Integer> indexes = new ArrayList<Integer>();
+		
+		for(;;) {
+			int index = r.nextInt(this.m_label.size()-1);
+			if(!indexes.contains(index)) {
+				indexes.add(index);
+				
+				if (labelMap.containsKey(m_label.get(index))) {
+					int count = labelMap.get(m_label.get(index));
+					labelMap.replace(m_label.get(index), ++count);
+				}else{
+					labelMap.put(m_label.get(index), 1);
+				}
+			}
+			
+			if(indexes.size() == numberOfLabels) {
+				break;
+			}
+		}
+		
+		// this will get the maximum count for the majority.
+		Object max = null;
+		int MaxCount = -1;		
+		for (Enumeration<Integer> e = labelMap.keys(); e.hasMoreElements();) {
+			Object entry = e.nextElement();
+			if (MaxCount < labelMap.get(entry)) {
+				max = entry;
+				MaxCount = labelMap.get(entry);
+			}
+		}
+		
 		
 		// set the Label.
 		m_currentLabel = max;
