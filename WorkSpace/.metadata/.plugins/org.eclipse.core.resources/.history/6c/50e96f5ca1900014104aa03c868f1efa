@@ -1,0 +1,5 @@
+package algorithmn.Interfaces;
+
+public interface IKmeans {
+
+}

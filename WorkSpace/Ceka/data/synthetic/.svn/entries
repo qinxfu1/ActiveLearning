@@ -1,0 +1,61 @@
+10
+
+dir
+196
+https://svn.code.sf.net/p/ceka/code-0/trunk/data/synthetic
+https://svn.code.sf.net/p/ceka/code-0
+
+
+
+2014-08-15T21:21:26.929718Z
+161
+jzhangcs
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f150946c-79b7-40b4-a265-b063c4da6d51
+
+biodeg
+dir
+
+car
+dir
+
+horse-colic
+dir
+
+ionosphere
+dir
+
+kr-vs-kp
+dir
+
+mushroom
+dir
+
+sick
+dir
+
+spambase
+dir
+
+tic-tac-toe
+dir
+
+vote
+dir
+
+waveform
+dir
+

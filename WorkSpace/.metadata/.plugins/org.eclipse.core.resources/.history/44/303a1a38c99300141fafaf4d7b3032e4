@@ -1,0 +1,130 @@
+package CustomClass;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Stream;
+
+import weka.core.Instance;
+import weka.core.Instances;
+
+public class InstancesLoader {
+	
+	private ArrayList<Label> m_Labels = new ArrayList<Label>();
+	private Instances m_data;
+	
+	public InstancesLoader(String datafilePath, String LabelFilePath){
+		
+		// read the dataFile.
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(datafilePath));
+			m_data = new Instances(reader);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// read the label.
+		this.loaderLabel(LabelFilePath);
+	}
+	
+	private void loaderLabel(String path){
+		BufferedReader reader;
+		Stream<String> sline;
+		try {
+			reader = new BufferedReader(new FileReader(path));
+			sline = reader.lines();
+			
+			
+			Iterator<String> lineIterator = sline.iterator();
+			
+			String line;
+			while(lineIterator.hasNext()) {
+				line = lineIterator.next();
+				this.ProcessLabelLine(line);
+			}
+			
+			reader.close();
+			sline.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		finally{
+			reader.close();
+			sline.close();
+		}
+		
+		
+	
+	public Instances getInstances() throws IOException{
+		
+		return m_data;
+	}
+	
+	public int isInstanceExists(Instance data) {
+		
+		if (m_data.contains(data)) {
+			
+			return m_data.indexOf(data);
+
+		}
+		
+		return -1;
+	}
+	
+	private void ProcessLabelLine(String line) {
+		
+		String pattern = "([0-9]+)(\\s?)([0-9]+)(\\s?)([0-9]+)";
+		Pattern regexpattern = Pattern.compile(pattern);
+		Matcher m = regexpattern.matcher(line);
+		
+		if (m.matches()) {
+			String workderId = m.group(1);
+			String instanceId = m.group(3);
+			String labelvalue = m.group(5);
+		
+			Label l = this.getLabel(instanceId);
+			l.addLabel(Integer.parseInt(labelvalue));
+		}
+				
+	}
+	
+	private Label getLabel(String instanceId) {
+		
+		Label l = null;
+		int nInstanceID = Integer.parseInt(instanceId);
+		
+		for(Label ilabel:m_Labels) {
+			if (ilabel.getinstanceID() == nInstanceID) {
+				l = ilabel;
+				break;
+			}
+		}
+		
+		if(l == null) {
+			l = new Label(nInstanceID, this.m_data.get(nInstanceID));
+			this.m_Labels.add(l);
+		}
+		
+		return l;
+	}
+	
+	public LabelContainer getLabelContainer(){
+		return new LabelContainer(this.m_Labels);
+	}
+	
+	
+}

@@ -1,0 +1,197 @@
+package utility;
+
+import CustomClass.Cluster;
+import weka.clusterers.SimpleKMeans;
+import weka.core.DistanceFunction;
+import weka.core.EuclideanDistance;
+import weka.core.Instance;
+import weka.core.Instances;
+
+/*
+ * This K mean class is design only for creating 2 clusters.
+ */
+public class Kmean {
+	
+	private int m_numIteration = 5; 
+	private int m_numOfCluster = 2;
+	private Cluster[] m_cluster;
+	private Instances m_initialCetroid;
+	private DistanceFunction m_distancefunction;
+	
+	public Kmean(){
+		
+		this.m_distancefunction = new  EuclideanDistance();
+	
+	}
+	
+	public Cluster[] buildCluster(Instances data) {
+		m_cluster = null;
+		// if we didnt set the initial centroid.
+		// Then we are going to use the weka simpleKeyMeans to perform the operation.
+		if(this.m_initialCetroid == null) {
+			try {
+				WekaSimpleKeyMeans(data);
+			}catch(Exception ex) {
+				ex.printStackTrace();
+			}
+		}else {
+			CustomKmeanCluster(data);
+		}
+		
+		return m_cluster;
+	}
+	
+	public int getnumIteration() {
+		return m_numIteration;
+	}
+	
+	public void setnumIteration(int m_numIteration) {
+		this.m_numIteration = m_numIteration;
+	}
+	
+	public int getnumOfCluster() {
+		return m_numOfCluster;
+	}
+	
+	public void setnumOfCluster(int m_numOfCluster) {
+		this.m_numOfCluster = m_numOfCluster;
+	}
+	
+	public DistanceFunction getDistancefunction() {
+		return m_distancefunction;
+	}
+	
+	public void setDistancefunction(DistanceFunction m_distancefunction) {
+		this.m_distancefunction = m_distancefunction;
+	}
+	
+	
+	private void WekaSimpleKeyMeans(Instances data) throws Exception {
+		
+		SimpleKMeans simpleKeyMeans = new SimpleKMeans();
+		
+		// Initialize the Kmeans Instance
+		simpleKeyMeans.setDistanceFunction(m_distancefunction);
+		simpleKeyMeans.setNumClusters(m_numOfCluster);
+		simpleKeyMeans.setMaxIterations(m_numIteration);
+		
+		// Need to preserve order of instances.
+		simpleKeyMeans.setPreserveInstancesOrder(true);
+		
+		// Now execute the clustering.
+		simpleKeyMeans.buildClusterer(data);
+		
+		Instances simpleKeyMeansCenteriod =  simpleKeyMeans.getClusterCentroids();
+		
+		// Set the Centered for each cluster.
+		m_cluster = new Cluster[simpleKeyMeansCenteriod.size()];
+		int index = 0;
+		for(Instance centroid: simpleKeyMeansCenteriod) {
+			// Initialize the Centered
+			m_cluster[index] = new Cluster();
+			m_cluster[index].setCentriod(centroid);
+			// Initialize the Instances		
+			m_cluster[index].setInstances(data);
+			index++;
+		}
+		
+		// Add the instance into the cluster.
+		index = 0;
+		for(int assignment:simpleKeyMeans.getAssignments()) {
+			m_cluster[assignment].addInstance(data.get(index));
+			index ++;
+		}
+		
+	}
+	
+	
+	public Instances getInitialCetroid() {
+		return m_initialCetroid;
+	}
+
+	public void setInitialCetroid(Instances m_initialCetroid) {
+		this.m_initialCetroid = m_initialCetroid;
+	}
+
+	private void CustomKmeanCluster(Instances data) {
+		
+		// Create a cluster
+		Cluster[] tempCluster = new Cluster[m_numOfCluster];
+		
+		// Initialize the Centered of each Cluster.
+		int index = 0;
+		
+		for(@SuppressWarnings("unused") Cluster centroid: tempCluster) {
+			tempCluster[index] = new Cluster();
+			tempCluster[index].setCentriod(m_initialCetroid.get(index));
+			tempCluster[index].setInstances(data);
+			index++;
+		}
+		
+		boolean centroid_move;
+		// Perform K-Mean Iteration
+		for(int iteration = 0; iteration < this.getnumIteration();iteration++) {
+			
+			
+			// Add each instance to a cluster.
+			for (Instance instance: data) {
+				Cluster ClusterAssignment = CheckClosestCentriod(tempCluster, instance);
+				ClusterAssignment.addInstance(instance);
+			}
+			
+			// Calculation for the new centroid.
+			centroid_move = true; 
+			for(Cluster c:tempCluster) {
+				
+				// This will set the value to false if even one centriod moved.
+				centroid_move = centroid_move && (!c.calculateNewCentriod(m_distancefunction));
+				
+			}
+			
+			// If the centroid has'nt move.
+			// then break the loop.
+			if(!centroid_move) {
+				break;
+			}
+			
+			// Determined if the we would like to remove all the instance and begin
+			// on the next iteration.
+			for(Cluster c:tempCluster) {
+				
+				if (iteration != this.getnumIteration()-1) {
+					c.removeAllInstace();
+				}
+			}
+			
+		}
+		
+		this.m_cluster = tempCluster;
+		
+	}
+
+	
+	private Cluster CheckClosestCentriod(Cluster[] tempCluster, Instance data) {
+
+		double previous = 0;
+		
+		// lets initialize the first cluster as the closest.
+		Cluster Closest = tempCluster[0];
+		
+		// lets initialize the previous.
+		previous = Math.abs(m_distancefunction.distance(Closest.getCentriod(), data));
+		
+		for(Cluster ct:tempCluster) {
+			
+			double current = Math.abs(m_distancefunction.distance(ct.getCentriod(), data));
+			
+			if (current < previous ) {
+				Closest = ct;
+			}
+			
+			previous = current;
+		}
+		
+		return Closest;
+	}
+	
+}

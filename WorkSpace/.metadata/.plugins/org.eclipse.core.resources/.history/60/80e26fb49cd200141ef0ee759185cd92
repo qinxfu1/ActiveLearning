@@ -1,0 +1,331 @@
+package main;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
+
+import utility.CenterInstances;
+import utility.EdgeInstances;
+import utility.Kmean;
+import utility.OutEdgeInstances;
+import utility.RandomInstances;
+import utility.WriteAcc;
+import weka.core.Instances;
+import CustomClass.Cluster;
+import CustomClass.InstanceProxy;
+import CustomClass.InstancesLoader;
+import CustomClass.Label;
+import CustomClass.LabelContainer;
+
+public class MainClass {
+
+	private InstancesLoader mloader;
+
+	
+	private int MAJORITY_VOTE_COUNT = 10;
+	private double POINTS_PERCENTAGE = 0.2;
+	
+	public double getEDGE_PERCENTAGE() {
+		return POINTS_PERCENTAGE;
+	}
+	
+	public void setEDGE_PERCENTAGE(double eDGE_PERCENTAGE) {
+		POINTS_PERCENTAGE = eDGE_PERCENTAGE;
+	}
+	
+	
+	private String LOADER_FILTER = "";
+	public String getLOADER_FILTER() {
+		return LOADER_FILTER;
+	}
+
+	public void setLOADER_FILTER(String lOADER_FILTER) {
+		LOADER_FILTER = lOADER_FILTER;
+	}
+
+	public void execute(int attempt) throws Exception {
+		// set this data to something from the file.
+		//BufferedReader reader = new BufferedReader(new FileReader("/home/parallels/Desktop/WorkSpace/test.arff"));
+		mloader = new InstancesLoader("/Users/Jessie/Desktop/myProject/WorkSpace4/tilia.arffx",
+				"/Users/Jessie/Desktop/myProject/WorkSpace4/tilia.response.txt",LOADER_FILTER);
+		Instances data = mloader.getInstances();
+		
+		//int number_attributes = data.get(0).numAttributes();
+		
+		System.out.println(data.numInstances()+".......number of 0: " + mloader.getNumoflabel0());
+		
+	
+		// Create Kmeans without centroid.
+		Kmean k = new Kmean();
+		Cluster[] cluster  = k.buildCluster(data);
+		System.out.println("cluster 0 size: "+cluster[0].getInstances().size());
+		System.out.println("cluster 1 size: "+cluster[1].getInstances().size());
+//		for(InstanceProxy ins: cluster[0].getInstances()){
+//			System.out.println("cluster 0 : "+ins.getinstanceID());
+//		}
+//		
+//		for(InstanceProxy ins: cluster[1].getInstances()){
+//			System.out.println("cluster 1 : "+ins.getinstanceID());
+//		}
+		
+		ArrayList<InstanceProxy> cdata = k.m_cData;
+		
+		
+		
+		WriteAcc recordAcc = new WriteAcc(MAJORITY_VOTE_COUNT+"edgeTTTTT.csv");
+		
+		for(int x=0;x< attempt;x++) {
+			
+			//randomly set other labels
+			for(InstanceProxy ins: cluster[0].getInstances()) {
+				ins.setLabeltoNull();
+				
+			}
+			for(InstanceProxy ins: cluster[1].getInstances()) {
+				Random r = new Random();
+				Integer label = r.nextInt()%2;
+				if(ins.getCurrentLabel() == null) {
+					ins.setLabel(label);
+				}
+			}
+			
+			
+			System.out.println("---------------------Attempt: "+x+"-------------------------" );
+			
+//			//-------------------Method 1: Pick the points near the edge.-----------------------
+			EdgeInstances edge = new EdgeInstances();
+			edge.setDistancefunction(k.getDistancefunction());
+			ArrayList<InstanceProxy> points0 = edge.calculateEdge(cluster[0],cluster[1], POINTS_PERCENTAGE);	
+			ArrayList<InstanceProxy> points1 = edge.calculateEdge(cluster[1],cluster[0], POINTS_PERCENTAGE);
+					
+			//-------------------Method 2: Pick the points randomly-------------------
+//    		RandomInstances randPoints = new RandomInstances();
+//			ArrayList<InstanceProxy> points0 = randPoints.getRandomInstances(cluster[0],POINTS_PERCENTAGE);
+//			ArrayList<InstanceProxy> points1 = randPoints.getRandomInstances(cluster[1],POINTS_PERCENTAGE);
+//		
+			
+			//-------------------Method 3: Pick the points near the centroids-------------------
+//			CenterInstances cInstances = new CenterInstances();
+//			cInstances.setDistancefunction(k.getDistancefunction());
+//			ArrayList<InstanceProxy> points0 = cInstances.getInstances(cluster[0],POINTS_PERCENTAGE);
+//			ArrayList<InstanceProxy> points1 = cInstances.getInstances(cluster[1],POINTS_PERCENTAGE);
+			
+			//-------------------Method 4: Pick the points farthest to the other centroid--------------------
+//			OutEdgeInstances outedge = new OutEdgeInstances();
+//			outedge.setDistancefunction(k.getDistancefunction());
+//			ArrayList<InstanceProxy> points0 = outedge.calculateEdge(cluster[0],cluster[1], POINTS_PERCENTAGE);	
+//			ArrayList<InstanceProxy> points1 = outedge.calculateEdge(cluster[1],cluster[0], POINTS_PERCENTAGE);
+			//Printing the content of the Edges.
+
+			System.out.println("Cluster 0 Edges = "+ points0.size());
+//			System.out.println("Cluster 0 Centroid: " + cluster[0].getCentriod().toString());
+			
+			System.out.println("Cluster 1 Edges = "+ points1.size());
+//			System.out.println("Cluster 1 Centroid: " + cluster[1].getCentriod().toString());
+			
+			
+			// Get the Label.
+			LabelContainer lcontainer = mloader.getLabelContainer();
+			//System.out.println(lcontainer.getSize());
+			
+			double p0 = 0;
+			double p1 = 0;
+			int count00 = 0;
+			int count01 = 0;
+			int count10 = 0;
+			int count11 = 0;
+			
+			//assign label to each ins in each edge0. Count the number of ins with label 0 and number of ins with 1
+			for (InstanceProxy ins: points0) {
+
+				Label l = lcontainer.getLabel(ins.getIndex());
+				
+				if((int) l.calculateMajorityLabel(MAJORITY_VOTE_COUNT) == 0) {
+
+					ins.setLabel(0);
+//					System.out.println("current label is: "+ins.getCurrentLabel());
+					count00++;
+					
+				}else{
+					
+					ins.setLabel(1);
+//					System.out.println("current label is: "+ins.getCurrentLabel());
+					count01++;
+					
+				}
+				
+			}
+			//assign label to each ins in each edge1. Count the number of ins with label 0 and number of ins with 1
+			for (InstanceProxy ins: points1) {
+				
+				Label l = lcontainer.getLabel(ins.getIndex());
+				
+				if((int) l.calculateMajorityLabel(MAJORITY_VOTE_COUNT) == 0) {
+			
+					ins.setLabel(0);
+					count10++;
+					
+				}else{
+					
+					ins.setLabel(1); 
+					count11++;
+					
+				}
+				
+			}
+			//randomly set other labels
+/*			for(InstanceProxy ins: cluster[0].getInstances()) {
+				Random r = new Random();
+				Integer label = r.nextInt()%2;
+				if(ins.getCurrentLabel() == null) {
+					ins.setLabel(label);
+				}
+			}
+			for(InstanceProxy ins: cluster[1].getInstances()) {
+				Random r = new Random();
+				Integer label = r.nextInt()%2;
+				if(ins.getCurrentLabel() == null) {
+					ins.setLabel(label);
+				}
+			}
+*/			
+			
+			p0 = (double)count00/(double)count01;
+			p1 = (double)count10/(double)count11;
+			
+			//ecge0 has more instances with label 0
+			if(p0 > p1){
+				for(InstanceProxy ins: points0){
+					if(ins.getCurrentLabel().intValue() == 1){
+						this.moveInstanceToCluster(cluster[0], cluster[1], ins);
+					}
+				}
+				
+				for(InstanceProxy ins: points1){
+					if(ins.getCurrentLabel().intValue() == 0){
+						this.moveInstanceToCluster(cluster[1], cluster[0], ins);
+					}
+				}
+			
+				this.setClusterLabel(cluster[0], 0);
+				System.out.println("Cluster 0 = 0");
+				this.setClusterLabel(cluster[1], 1);
+				System.out.println("Cluster 1 = 1");
+				
+			}else if(p0 < p1){
+				for(InstanceProxy ins: points0){
+					if(ins.getCurrentLabel().intValue() == 0){
+						this.moveInstanceToCluster(cluster[0], cluster[1], ins);
+					}
+				}
+				for(InstanceProxy ins: points1){
+					if(ins.getCurrentLabel().intValue() == 1){
+						this.moveInstanceToCluster(cluster[1], cluster[0], ins);
+					}
+				}
+				
+				this.setClusterLabel(cluster[0], 1);
+				System.out.println("Cluster 0 = 1");
+				this.setClusterLabel(cluster[1], 0);
+				System.out.println("Cluster 1 = 0");
+			}else{
+				System.out.println("equal");
+				Random r = new Random();
+				Integer label = r.nextInt()%2;
+				this.setClusterLabel(cluster[0], label==0?0:1);
+				this.setClusterLabel(cluster[1], label==0?1:0);
+				System.out.println("Cluster 0 = " + (label ==0? 0:1));
+				System.out.println("Cluster 1 = " + (label ==0? 1:0));
+			}
+			System.out.println("cluster 0 size: "+cluster[0].getInstances().size());
+			System.out.println("cluster 1 size: "+cluster[1].getInstances().size());
+			
+			
+			int count0;
+			int count1;
+			
+			System.out.println("Confusion matrix 0: " + (count0 = this.getConfusionMatrix(cluster[0])));
+			System.out.println("Confusion matrix 1: " + (count1 = this.getConfusionMatrix(cluster[1])));
+
+			double acc = (double)(count0 + count1)/(double)(mloader.getOriginalData().numInstances());
+			System.out.println("Accuracy is: " + acc);
+			//write acc to a file
+			recordAcc.write(Double.toString(acc)+",");
+			
+			System.out.println("Done");
+			// Get the Centroid.
+			
+			cluster[0].calculateNewCentriod(k.getDistancefunction());
+			cluster[1].calculateNewCentriod(k.getDistancefunction());
+			
+			Instances newcentriods = new Instances(data,0);
+			newcentriods.add(cluster[0].getCentriod());
+			newcentriods.add(cluster[1].getCentriod());
+			k.setnumIteration(1000);
+			k.setInitialCetroid(newcentriods);
+			cluster = k.buildCluster(cdata);
+			
+			
+		}
+		recordAcc.write("\n");
+		recordAcc.close();
+
+	}
+	private int getRandomLabel() {
+		int label = 0;
+		
+		return label;
+	}
+	private void moveInstanceToCluster(Cluster pSource, Cluster pDestination, InstanceProxy pinstance) throws Exception { 
+		
+		// Find if the instanceProxy exist in the Source Cluster. We cannot remove something that doesn't exist.
+		if(pSource.isInstanceExists(pinstance.getinstanceID()) > -1 ) {
+			pSource.removeInstance(pinstance);
+		}else {
+			throw new Exception("Instance doesn't exist in source cluster.Instance ID = " + pinstance.getinstanceID());
+		}
+		
+		// Find if the InstanceProxy exist in the destination. We cannot add a duplicate.
+		if(pDestination.isInstanceExists(pinstance.getinstanceID()) == -1 ) {
+			pDestination.addInstance(pinstance);
+		}else {
+			throw new Exception("Instance already exist in destination cluster. Instance ID = " + pinstance.getinstanceID());
+		}
+	}
+	
+	private void setClusterLabel(Cluster pCluster, int pLabel) {
+		for(InstanceProxy ins: pCluster.getInstances()){
+			ins.setLabel(pLabel);
+		}
+	}
+
+	private int getConfusionMatrix(Cluster pCluster) {
+		int count = 0;
+		
+		for(InstanceProxy ins : pCluster.getInstances()){
+			if(mloader.getOriginalData().get(ins.getinstanceID()).value(64) == ins.getCurrentLabel()){
+				//System.out.println(ins.getinstanceID());
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MainClass mainC = new MainClass();
+		try {
+			mainC.LOADER_FILTER = "65";
+			//attribute count starts from 1
+			mainC.execute(10);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+
+		
+	}
+
+}

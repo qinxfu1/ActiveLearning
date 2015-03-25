@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="weka.filters.unsupervised.attribute.Remove"/>
+<fullyQualifiedTypeName name="weka.filters.Filter"/>
+<fullyQualifiedTypeName name="CustomClass.CustomInstance"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="weka.core.Instance"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="utility.RandomInstances"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="utility.WriteAcc"/>
+<fullyQualifiedTypeName name="ceka.core.Dataset"/>
+<fullyQualifiedTypeName name="ceka.consensus.plat.FreqPosTable"/>
+<fullyQualifiedTypeName name="ceka.utils.Misc"/>
+<fullyQualifiedTypeName name="utility.CenterInstances"/>
+<fullyQualifiedTypeName name="utility.OutEdgeInstances"/>
+<fullyQualifiedTypeName name="utility.iPickInstances"/>
+</qualifiedTypeNameHistroy>

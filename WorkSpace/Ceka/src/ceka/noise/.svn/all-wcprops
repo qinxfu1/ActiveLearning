@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/ceka/code-0/!svn/ver/195/trunk/src/ceka/noise
+END
+PolishingLabels.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/ceka/code-0/!svn/ver/195/trunk/src/ceka/noise/PolishingLabels.java
+END
+ClassificationFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/ceka/code-0/!svn/ver/165/trunk/src/ceka/noise/ClassificationFilter.java
+END
+MajorityFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/ceka/code-0/!svn/ver/165/trunk/src/ceka/noise/MajorityFilter.java
+END
+STCConfidence.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/ceka/code-0/!svn/ver/185/trunk/src/ceka/noise/STCConfidence.java
+END
+SelfTrainCorrection.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/ceka/code-0/!svn/ver/165/trunk/src/ceka/noise/SelfTrainCorrection.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/ceka/code-0/!svn/ver/166/trunk/src/ceka/noise/Filter.java
+END
+IterativePartitionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/ceka/code-0/!svn/ver/165/trunk/src/ceka/noise/IterativePartitionFilter.java
+END
+MultiplePartitionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/ceka/code-0/!svn/ver/192/trunk/src/ceka/noise/MultiplePartitionFilter.java
+END

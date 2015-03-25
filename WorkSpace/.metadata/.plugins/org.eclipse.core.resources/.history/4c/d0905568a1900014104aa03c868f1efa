@@ -1,0 +1,13 @@
+package algorithmn.Interfaces;
+
+import java.util.ArrayList;
+
+import data.Interfaces.ICluster;
+import data.Interfaces.IDataSet;
+
+public interface IKmeans {
+	public void setClusterA(ICluster A);
+	public void setClusterB(ICluster B);
+	public void setDataSets(ArrayList<IDataSet> datasets);
+	public void Calculate(int iterations);
+}

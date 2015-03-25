@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;m_cluster&apos; in &apos;main.MainClass.execute(...)&apos; to &apos;cluster&apos;&#x0A;- Original project: &apos;ProjectFu&apos;&#x0A;- Original element: &apos;main.MainClass.execute(int).m_cluster&apos;&#x0A;- Renamed element: &apos;m_cluster&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;m_cluster&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;main{MainClass.java[MainClass~execute~I@m_cluster!1489!1532!1499!1507!\[QCluster;!0!false" name="cluster" references="true" stamp="1423542593695" version="1.0"/>
+</session>

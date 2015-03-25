@@ -1,0 +1,77 @@
+10
+
+dir
+196
+https://svn.code.sf.net/p/ceka/code-0/trunk
+https://svn.code.sf.net/p/ceka/code-0
+
+
+
+2014-09-16T01:10:26.000793Z
+196
+jzhangcs
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f150946c-79b7-40b4-a265-b063c4da6d51
+
+.project
+file
+
+
+
+
+2014-09-16T15:43:42.000000Z
+0afaa82b042c2383fc4fe60807e628c9
+2014-04-20T21:35:57.749798Z
+6
+jzhangcs
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+380
+
+.settings
+dir
+
+data
+dir
+
+lib
+dir
+
+src
+dir
+
+test
+dir
+

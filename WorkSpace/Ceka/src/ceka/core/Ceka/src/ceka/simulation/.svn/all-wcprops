@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/p/ceka/code-0/!svn/ver/186/trunk/src/ceka/simulation
+END
+GaussianLabelingStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/ceka/code-0/!svn/ver/79/trunk/src/ceka/simulation/GaussianLabelingStrategy.java
+END
+MockWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/ceka/code-0/!svn/ver/79/trunk/src/ceka/simulation/MockWorker.java
+END
+SingleQualLabelingStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/186/trunk/src/ceka/simulation/SingleQualLabelingStrategy.java
+END
+ExampleWorkersMask.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/ceka/code-0/!svn/ver/99/trunk/src/ceka/simulation/ExampleWorkersMask.java
+END
+ExampleMask.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/ceka/code-0/!svn/ver/107/trunk/src/ceka/simulation/ExampleMask.java
+END
+LabelingStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/ceka/code-0/!svn/ver/79/trunk/src/ceka/simulation/LabelingStrategy.java
+END

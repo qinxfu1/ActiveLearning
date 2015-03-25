@@ -1,0 +1,653 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/ceka/code-0/!svn/ver/64/trunk/data/real-world/Processed/BinaryBiased
+END
+valence.median.stc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.median.stc
+END
+disgust.minentropy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.minentropy.gold.txt
+END
+sadness.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.gold.txt
+END
+wordsim.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/wordsim.response.txt
+END
+anger.median.stc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.median.stc
+END
+valence.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.response.txt
+END
+sadness.median.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.median.gold.txt
+END
+bm.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/bm.response.txt
+END
+joy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.stc
+END
+fear.median.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.median.gold.txt
+END
+anger.minentropy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.minentropy.response.txt
+END
+wordsim.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/wordsim.glad.txt
+END
+surprise.minentropy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/ceka/code-0/!svn/ver/64/trunk/data/real-world/Processed/BinaryBiased/surprise.minentropy.gold.txt
+END
+valence.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.glad.txt
+END
+joy.median.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.median.response.txt
+END
+bm.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/bm.glad.txt
+END
+valence.minentropy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.minentropy.gold.txt
+END
+fear.minentropy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.minentropy.stc
+END
+disgust.stc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.stc
+END
+anger.minentropy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.minentropy.glad.txt
+END
+joy.median.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.median.glad.txt
+END
+disgust.median.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.median.response.txt
+END
+joy.median.stc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.median.stc
+END
+trec2010.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/trec2010.response.txt
+END
+joy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.response.txt
+END
+disgust.median.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.median.glad.txt
+END
+surprise.stc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.stc
+END
+sadness.median.stc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.median.stc
+END
+trec2010.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/trec2010.glad.txt
+END
+valence.stc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.stc
+END
+surprise.median.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.median.response.txt
+END
+wordsim.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/wordsim.gold.txt
+END
+valence.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.gold.txt
+END
+joy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.glad.txt
+END
+valence.median.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.median.response.txt
+END
+bm.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/bm.gold.txt
+END
+surprise.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.response.txt
+END
+surprise.median.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.median.glad.txt
+END
+anger.minentropy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.minentropy.gold.txt
+END
+valence.median.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.median.glad.txt
+END
+joy.median.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.median.gold.txt
+END
+trec2010.stc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/trec2010.stc
+END
+surprise.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.glad.txt
+END
+sadness.minentropy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.minentropy.response.txt
+END
+disgust.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.response.txt
+END
+fear.minentropy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.minentropy.response.txt
+END
+disgust.median.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.median.gold.txt
+END
+trec2010.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/trec2010.gold.txt
+END
+surprise.minentropy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.minentropy.stc
+END
+sadness.minentropy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.minentropy.glad.txt
+END
+adult2.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/adult2.response.txt
+END
+disgust.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.glad.txt
+END
+anger.stc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.stc
+END
+fear.minentropy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.minentropy.glad.txt
+END
+fear.median.stc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.median.stc
+END
+joy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.gold.txt
+END
+anger.median.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.median.response.txt
+END
+adult2.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/adult2.glad.txt
+END
+surprise.median.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.median.gold.txt
+END
+fear.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.response.txt
+END
+wordsim.stc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/wordsim.stc
+END
+valence.median.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.median.gold.txt
+END
+disgust.minentropy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.minentropy.stc
+END
+anger.median.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.median.glad.txt
+END
+surprise.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.gold.txt
+END
+fear.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.glad.txt
+END
+spam.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/spam.response.txt
+END
+anger.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.response.txt
+END
+spam.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/spam.glad.txt
+END
+sadness.minentropy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.minentropy.gold.txt
+END
+anger.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.glad.txt
+END
+fear.minentropy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.minentropy.gold.txt
+END
+disgust.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.gold.txt
+END
+valence.minentropy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.minentropy.stc
+END
+joy.minentropy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.minentropy.response.txt
+END
+adult2.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/adult2.gold.txt
+END
+duck.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/64/trunk/data/real-world/Processed/BinaryBiased/duck.response.txt
+END
+anger.minentropy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.minentropy.stc
+END
+joy.minentropy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.minentropy.glad.txt
+END
+anger.median.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.median.gold.txt
+END
+duck.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/64/trunk/data/real-world/Processed/BinaryBiased/duck.glad.txt
+END
+fear.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.gold.txt
+END
+sadness.stc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.stc
+END
+disgust.minentropy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.minentropy.response.txt
+END
+surprise.median.stc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.median.stc
+END
+sadness.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.response.txt
+END
+fear.stc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.stc
+END
+sadness.median.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.median.response.txt
+END
+spam.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/spam.gold.txt
+END
+disgust.minentropy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.minentropy.glad.txt
+END
+fear.median.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.median.response.txt
+END
+anger.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/anger.gold.txt
+END
+sadness.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.glad.txt
+END
+adult2.stc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/adult2.stc
+END
+surprise.minentropy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.minentropy.response.txt
+END
+sadness.median.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.median.glad.txt
+END
+duck.stc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/ceka/code-0/!svn/ver/64/trunk/data/real-world/Processed/BinaryBiased/duck.stc
+END
+joy.minentropy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.minentropy.stc
+END
+disgust.median.stc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/disgust.median.stc
+END
+fear.median.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/fear.median.glad.txt
+END
+valence.minentropy.response.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.minentropy.response.txt
+END
+surprise.minentropy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/surprise.minentropy.glad.txt
+END
+sadness.minentropy.stc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/sadness.minentropy.stc
+END
+duck.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/64/trunk/data/real-world/Processed/BinaryBiased/duck.gold.txt
+END
+valence.minentropy.glad.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/valence.minentropy.glad.txt
+END
+joy.minentropy.gold.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/joy.minentropy.gold.txt
+END
+spam.stc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/spam.stc
+END
+bm.stc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/ceka/code-0/!svn/ver/45/trunk/data/real-world/Processed/BinaryBiased/bm.stc
+END

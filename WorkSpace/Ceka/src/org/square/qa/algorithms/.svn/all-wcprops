@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/ceka/code-0/!svn/ver/68/trunk/src/org/square/qa/algorithms
+END
+BayesGeneralized.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/66/trunk/src/org/square/qa/algorithms/BayesGeneralized.java
+END
+AlgorithmInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/66/trunk/src/org/square/qa/algorithms/AlgorithmInterface.java
+END
+MajorityVoteGeneralized.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/ceka/code-0/!svn/ver/66/trunk/src/org/square/qa/algorithms/MajorityVoteGeneralized.java
+END
+ExtendedAlgorithmInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/ceka/code-0/!svn/ver/66/trunk/src/org/square/qa/algorithms/ExtendedAlgorithmInterface.java
+END
+BinaryMapEstRY.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/ceka/code-0/!svn/ver/68/trunk/src/org/square/qa/algorithms/BinaryMapEstRY.java
+END
+ZenCrowdEM.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/ceka/code-0/!svn/ver/66/trunk/src/org/square/qa/algorithms/ZenCrowdEM.java
+END

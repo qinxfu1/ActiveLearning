@@ -1,0 +1,37 @@
+Cluster A Edges =  71
+Cluster B Edges = 49
+number of instances with label 0 is: 14
+number of instances with label 1 is: 106
+Kmean Iteration = 1
+Attempt: 0
+Cluster A Instances = 359
+Cluster B Instances = 241
+Accuracy is: 0.51
+Done
+Kmean Iteration = 3
+Cluster A Edges =  33
+Cluster B Edges = 87
+number of instances with label 0 is: 9
+number of instances with label 1 is: 111
+Kmean Iteration = 1
+Attempt: 1
+Cluster A Instances = 194
+Cluster B Instances = 406
+Accuracy is: 0.5616666666666666
+Done
+Kmean Iteration = 1
+Cluster A Edges =  33
+Cluster B Edges = 87
+number of instances with label 0 is: 2
+number of instances with label 1 is: 118
+Kmean Iteration = 1
+Attempt: 2
+Cluster A Instances = 119
+Cluster B Instances = 481
+Accuracy is: 0.5266666666666666
+Done
+Kmean Iteration = 1
+Cluster A Edges =  32
+Cluster B Edges = 88
+number of instances with label 0 is: 0
+number of instances with label 1 is: 120

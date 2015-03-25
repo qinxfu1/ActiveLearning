@@ -1,0 +1,34 @@
+10
+
+dir
+196
+https://svn.code.sf.net/p/ceka/code-0/trunk/src/org/square/qa/utilities
+https://svn.code.sf.net/p/ceka/code-0
+
+
+
+2014-07-12T15:26:52.712907Z
+66
+jzhangcs
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f150946c-79b7-40b4-a265-b063c4da6d51
+
+constructs
+dir
+
+fileParsers
+dir
+

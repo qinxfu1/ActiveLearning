@@ -1,0 +1,37 @@
+10
+
+dir
+196
+https://svn.code.sf.net/p/ceka/code-0/trunk/data/real-world/Processed
+https://svn.code.sf.net/p/ceka/code-0
+
+
+
+2014-07-02T16:56:15.641274Z
+64
+jzhangcs
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f150946c-79b7-40b4-a265-b063c4da6d51
+
+BinaryBiased
+dir
+
+BinaryUnbiased
+dir
+
+GTIC
+dir
+

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt
+END
+MyReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/MyReport.java
+END
+ObjectResultReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/ObjectResultReport.java
+END
+CSVGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/CSVGenerator.java
+END
+ConfusionMatrixReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/ConfusionMatrixReport.java
+END
+CategoryPriorsReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/CategoryPriorsReport.java
+END
+SummaryReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/SummaryReport.java
+END
+ReportTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/ReportTarget.java
+END
+StreamReportTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/StreamReportTarget.java
+END
+WorkerQualityReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/WorkerQualityReport.java
+END
+Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/Report.java
+END
+FileReportTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/FileReportTarget.java
+END
+ReportingContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/engine/rpt/ReportingContext.java
+END

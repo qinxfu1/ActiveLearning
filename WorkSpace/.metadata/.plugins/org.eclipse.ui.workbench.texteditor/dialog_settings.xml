@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="265" key="DIALOG_WIDTH"/>
+		<item value="347" key="DIALOG_Y_ORIGIN"/>
+		<item value="525" key="DIALOG_X_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="ran" key="selection"/>
+		<list key="findhistory">
+			<item value="rand"/>
+			<item value="ran"/>
+			<item value="ra"/>
+			<item value="Current Label"/>
+			<item value="m_currentLabel"/>
+			<item value="Cluster 1 Label is"/>
+			<item value="Cluster 0 Label is"/>
+			<item value="calculateNewCentriod"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Cluster 1 ="/>
+			<item value="Cluster 0 ="/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="413" key="DIALOG_Y_ORIGIN"/>
+		<item value="189" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

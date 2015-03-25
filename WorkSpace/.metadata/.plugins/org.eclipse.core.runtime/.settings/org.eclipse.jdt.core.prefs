@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/Applications/eclipse
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=/Applications/eclipse/plugins/org.junit_4.11.0.v201303080030/
+org.eclipse.jdt.core.classpathVariable.JUNIT_SRC_HOME=/Applications/eclipse/plugins/org.junit.source_4.11.0.v201303080030.jar
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+org.eclipse.jdt.core.compiler.compliance=1.8
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.timeoutForParameterNameFromAttachedJavadoc=50
+org.eclipse.jdt.core.userLibrary.ceka=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/commons-lang3-3.3.2.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/log4j-1.2.17.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/jblas-1.2.3.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/opencsv-2.3.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/simjava.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/args4j-2.0.21.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/weka.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/commons-math3-3.3.jar"/>\n\t<archive path\="/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/Ceka/lib/commons-beanutils-1.9.2.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.weka=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/Users/Jessie/Desktop/WorkSpace/weka-3-7-12/weka.jar">\n\t\t<attributes>\n\t\t\t<attribute name\="javadoc_location" value\="file\:/Users/Jessie/Desktop/WorkSpace/weka-3-7-12/doc/"/>\n\t\t</attributes>\n\t</archive>\n</userlibrary>\n

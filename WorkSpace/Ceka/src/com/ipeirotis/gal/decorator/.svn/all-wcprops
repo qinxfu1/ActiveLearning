@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/decorator
+END
+WorkerDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/decorator/WorkerDecorator.java
+END
+DawidSkeneDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/decorator/DawidSkeneDecorator.java
+END
+DatumDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/decorator/DatumDecorator.java
+END
+Decorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/decorator/Decorator.java
+END
+MetricsFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/decorator/MetricsFormatter.java
+END
+FieldAccessors.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/ceka/code-0/!svn/ver/73/trunk/src/com/ipeirotis/gal/decorator/FieldAccessors.java
+END
