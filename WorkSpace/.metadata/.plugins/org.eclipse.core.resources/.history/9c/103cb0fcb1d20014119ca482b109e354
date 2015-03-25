@@ -79,12 +79,12 @@ public class MainClass {
 			LabelContainer lcontainer = mloader.getLabelContainer();
 			for(InstanceProxy ins: cluster[0].getInstances()) {
 				Label l = lcontainer.getLabel(ins.getIndex());
-				ins.setLabel((int)l.calculateMajorityLabel(1,1));
+				ins.setLabel((int)l.calculateMajorityLabel(4,1));
 				
 			}
 			for(InstanceProxy ins: cluster[1].getInstances()) {
 				Label l = lcontainer.getLabel(ins.getIndex());
-				ins.setLabel((int)l.calculateMajorityLabel(1,1));
+				ins.setLabel((int)l.calculateMajorityLabel(4,1));
 			}
 /*			
 			//randomly set other labels

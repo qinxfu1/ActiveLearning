@@ -76,24 +76,17 @@ public class MainClass {
 		
 		for(int x=0;x< attempt;x++) {
 			
-			LabelContainer lcontainer = mloader.getLabelContainer();
-			for(InstanceProxy ins: cluster[0].getInstances()) {
-				Label l = lcontainer.getLabel(ins.getIndex());
-				ins.setLabel((int)l.calculateMajorityLabel(1,1));
-				
-			}
-			for(InstanceProxy ins: cluster[1].getInstances()) {
-				Label l = lcontainer.getLabel(ins.getIndex());
-				ins.setLabel((int)l.calculateMajorityLabel(1,1));
-			}
-/*			
 			//randomly set other labels
 			for(InstanceProxy ins: cluster[0].getInstances()) {
 				ins.setLabeltoNull();
 				
 			}
 			for(InstanceProxy ins: cluster[1].getInstances()) {
-				ins.setLabeltoNull();
+				Random r = new Random();
+				Integer label = r.nextInt()%2;
+				if(ins.getCurrentLabel() == null) {
+					ins.setLabel(label);
+				}
 			}
 			
 			
@@ -196,7 +189,7 @@ public class MainClass {
 				}
 			}
 */			
-/*			
+			
 			p0 = (double)count00/(double)count01;
 			p1 = (double)count10/(double)count11;
 			
@@ -246,7 +239,7 @@ public class MainClass {
 			}
 			System.out.println("cluster 0 size: "+cluster[0].getInstances().size());
 			System.out.println("cluster 1 size: "+cluster[1].getInstances().size());
-*/			
+			
 			
 			int count0;
 			int count1;

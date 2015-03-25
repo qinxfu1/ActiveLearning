@@ -64,7 +64,7 @@ public class Label {
 		ArrayList<Integer> indexes = new ArrayList<Integer>();
 		
 		for(;;) {
-			int index = r.nextInt(this.m_label.size());
+			int index = r.nextInt(this.m_label.size()-1);
 			if(!indexes.contains(index)) {
 				indexes.add(index);
 				
