@@ -22,7 +22,7 @@ public class MainClass {
 	private InstancesLoader mloader;
 
 	
-	private int MAJORITY_VOTE_COUNT = 10;
+	private int MAJORITY_VOTE_COUNT = 3;
 	private double POINTS_PERCENTAGE = 0.5;
 	
 	public double getEDGE_PERCENTAGE() {
@@ -44,16 +44,12 @@ public class MainClass {
 	}
 
 	public void execute(int attempt) throws Exception {
-		// set this data to something from the file.
-		//BufferedReader reader = new BufferedReader(new FileReader("/home/parallels/Desktop/WorkSpace/test.arff"));
-		mloader = new InstancesLoader("/Users/Jessie/Desktop/myProject/WorkSpace4/tilia.arffx",
-				"/Users/Jessie/Desktop/myProject/WorkSpace4/tilia.response.txt",LOADER_FILTER);
+		//load file include data set and label set
+		mloader = new InstancesLoader("/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/test.arff",
+				"/Users/Jessie/Documents/GitHub/ActiveLearning/WorkSpace/income94.response.txt",LOADER_FILTER);
 		Instances data = mloader.getInstances();
 		
-		//int number_attributes = data.get(0).numAttributes();
-		
 		System.out.println(data.numInstances()+".......number of 0: " + mloader.getNumoflabel0());
-		
 	
 		// Create Kmeans without centroid.
 		Kmean k = new Kmean();
@@ -69,10 +65,8 @@ public class MainClass {
 //		}
 		
 		ArrayList<InstanceProxy> cdata = k.m_cData;
-		
-		
-		
-		WriteAcc recordAcc = new WriteAcc(MAJORITY_VOTE_COUNT+"edgeTTTTT.csv");
+
+		WriteAcc recordAcc = new WriteAcc(MAJORITY_VOTE_COUNT+"Adult.csv");
 		
 		for(int x=0;x< attempt;x++) {
 			
@@ -82,27 +76,23 @@ public class MainClass {
 				
 			}
 			for(InstanceProxy ins: cluster[1].getInstances()) {
-				Random r = new Random();
-				Integer label = r.nextInt()%2;
-				if(ins.getCurrentLabel() == null) {
-					ins.setLabel(label);
-				}
+				ins.setLabeltoNull();
 			}
 			
 			
 			System.out.println("---------------------Attempt: "+x+"-------------------------" );
 			
 //			//-------------------Method 1: Pick the points near the edge.-----------------------
-			EdgeInstances edge = new EdgeInstances();
-			edge.setDistancefunction(k.getDistancefunction());
-			ArrayList<InstanceProxy> points0 = edge.calculateEdge(cluster[0],cluster[1], POINTS_PERCENTAGE);	
-			ArrayList<InstanceProxy> points1 = edge.calculateEdge(cluster[1],cluster[0], POINTS_PERCENTAGE);
-					
+//			EdgeInstances edge = new EdgeInstances();
+//			edge.setDistancefunction(k.getDistancefunction());
+//			ArrayList<InstanceProxy> points0 = edge.calculateEdge(cluster[0],cluster[1], POINTS_PERCENTAGE);	
+//			ArrayList<InstanceProxy> points1 = edge.calculateEdge(cluster[1],cluster[0], POINTS_PERCENTAGE);
+//					
 			//-------------------Method 2: Pick the points randomly-------------------
 //    		RandomInstances randPoints = new RandomInstances();
 //			ArrayList<InstanceProxy> points0 = randPoints.getRandomInstances(cluster[0],POINTS_PERCENTAGE);
 //			ArrayList<InstanceProxy> points1 = randPoints.getRandomInstances(cluster[1],POINTS_PERCENTAGE);
-//		
+		
 			
 			//-------------------Method 3: Pick the points near the centroids-------------------
 //			CenterInstances cInstances = new CenterInstances();
@@ -111,10 +101,10 @@ public class MainClass {
 //			ArrayList<InstanceProxy> points1 = cInstances.getInstances(cluster[1],POINTS_PERCENTAGE);
 			
 			//-------------------Method 4: Pick the points farthest to the other centroid--------------------
-//			OutEdgeInstances outedge = new OutEdgeInstances();
-//			outedge.setDistancefunction(k.getDistancefunction());
-//			ArrayList<InstanceProxy> points0 = outedge.calculateEdge(cluster[0],cluster[1], POINTS_PERCENTAGE);	
-//			ArrayList<InstanceProxy> points1 = outedge.calculateEdge(cluster[1],cluster[0], POINTS_PERCENTAGE);
+			OutEdgeInstances outedge = new OutEdgeInstances();
+			outedge.setDistancefunction(k.getDistancefunction());
+			ArrayList<InstanceProxy> points0 = outedge.calculateEdge(cluster[0],cluster[1], POINTS_PERCENTAGE);	
+			ArrayList<InstanceProxy> points1 = outedge.calculateEdge(cluster[1],cluster[0], POINTS_PERCENTAGE);
 			//Printing the content of the Edges.
 
 			System.out.println("Cluster 0 Edges = "+ points0.size());
@@ -303,7 +293,7 @@ public class MainClass {
 		int count = 0;
 		
 		for(InstanceProxy ins : pCluster.getInstances()){
-			if(mloader.getOriginalData().get(ins.getinstanceID()).value(64) == ins.getCurrentLabel()){
+			if(mloader.getOriginalData().get(ins.getinstanceID()).value(14) == ins.getCurrentLabel()){
 				//System.out.println(ins.getinstanceID());
 				count++;
 			}
@@ -315,7 +305,7 @@ public class MainClass {
 		// TODO Auto-generated method stub
 		MainClass mainC = new MainClass();
 		try {
-			mainC.LOADER_FILTER = "65";
+			mainC.LOADER_FILTER = "4,8,9,14,15";
 			//attribute count starts from 1
 			mainC.execute(10);
 		} catch (IOException e) {

@@ -106,8 +106,8 @@ public class InstancesLoader {
 			String instanceId = m.group(3);
 			String labelvalue = m.group(5);
 		
-			//Label l = this.getLabel(instanceId);//for adult dataset
-			Label l = this.getLabel(""+id/10);//for tilia and poplar dataset
+			Label l = this.getLabel(instanceId);//for adult dataset
+			//Label l = this.getLabel(""+id/10);//for tilia and poplar dataset
 			l.addLabel(Integer.parseInt(labelvalue));
 			id++;
 		}
